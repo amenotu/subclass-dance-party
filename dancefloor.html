@@ -6,11 +6,25 @@
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/blinkyGreen.js"></script>
+    <script src="src/makeBlinkySquare.js"></script>
+    <script src="src/lineup.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyGreen">add a blinky Green dancer</a> 
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkySquare">add a blinky square dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="linedUp">Line Up!</a>    </div>
+      <div class="container"></div>
     <script src="src/init.js"></script>
+    <script>
+       $('span.square').on({
+        mouseover: function(){ 
+          $(this).addClass("active");
+        }
+      });
+    </script>
   </body>
 </html>
